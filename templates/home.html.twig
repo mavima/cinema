@@ -1,0 +1,20 @@
+{% extends "./base.html.twig" %}
+
+{% block body %}
+
+<div class="homecontainer" style="background-image:linear-gradient(rgba(0, 98, 176, 0.35), rgba(0, 98, 176, 0.15)), url({{ asset('build/images/cinema.6391c85b.jpg') }}); background-size: contain; background-repeat: no-repeat; background-position: center;">
+    <div class="home-btn">
+        <a 
+        href="/movies" 
+        class="uppercase border border-gray-500 text-sm py-4 px-6 rounded transition-all bg-gray-800 text-white hover:bg-white hover:text-gray-800">
+            See some movies
+        </a>
+    </div>
+   <p class="photo-credit">
+        Photo by <a href="https://unsplash.com/@jeremyyappy?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jeremy Yap</a> on <a href="https://unsplash.com/photos/turned-on-projector-J39X2xX_8CQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+    </p>
+</div>
+
+
+
+{% endblock %}
