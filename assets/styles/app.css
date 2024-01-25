@@ -12,15 +12,25 @@
     display: none;
 }
 
+.large {
+    font-size: 4rem !important;
+}
+
+
 .index-card {
     height: 550px;
     position: relative;
+}
+
+.index-image-container {
+    min-height: 185px;
 }
 
 .index-img {
     transition: transform .3s;
     width: 300px;
     height: auto;
+    position: absolute;
 }
 
 .resize-image {

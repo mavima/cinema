@@ -25,11 +25,13 @@
         <!-- Review Item -->
         {% for movie in movies %}
             <div class="text-center pt-8 pb-4 index-card">
-                <img
-                    src="{{ movie.imagePath }}"
-                    alt=""
-                    class="shadow-xl rounded-md index-img"
-                />
+                <div class="index-image-container">
+                    <img
+                        src="{{ movie.imagePath }}"
+                        alt=""
+                        class="shadow-xl rounded-md index-img"
+                    />
+                </div>
 
                 <h2 class="text-gray-700 font-bold text-3xl py-2">
                     {{ movie.title }}

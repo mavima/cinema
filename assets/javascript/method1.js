@@ -2,7 +2,7 @@ let id = null;
 
 function hide(elem, time) {
     setTimeout(function () {
-        elem.style.display = 'none';
+       elem.style.display = 'none';
     }, time);
 }
 

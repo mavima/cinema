@@ -10,21 +10,26 @@ $('#info-btn').on('click', () => {
 
 $('.index-img').on('mouseenter', (e) => {
     $(e.currentTarget).animate({
-        opacity: '80%'
+        opacity: '70%'
     }, 300)
 }).on('mouseleave', (e) => {
     $(e.currentTarget).animate({
         opacity: '100%'
     }, 1000)
 }).on('click', (e) => {
-    $(e.currentTarget).toggleClass('resize-image');
-})
-
-$('.index-title').on('click', (e) => {
     $(e.currentTarget).animate({
-        fontSize: '4rem'
+        bottom: '250px'
+    }, "slow");
+    $(e.currentTarget).animate({
+        top: '20px',
+        opacity: '100%'
     });
 });
+
+$('.index-title').on('click', (e) => {
+    $(e.currentTarget).toggleClass('large');
+});
+
 
 
 
