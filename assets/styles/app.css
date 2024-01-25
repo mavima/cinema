@@ -70,7 +70,13 @@ nav {
 .home-btn {
     position: absolute;
     top: 38vh;
-    right: 29%;
+    right: 10%;
+}
+
+.clip {
+    position: absolute;
+    width: 100px;
+    height: 70px;
 }
 
 footer {
@@ -80,8 +86,12 @@ footer {
 .photo-credit {
     position:absolute;
     bottom: 1vh;
-    right: 13%;
+    right: 3%;
     color: white;
     font-weight: 100;
     font-size: x-small;
+}
+
+@media only screen and (max-width: 600px) {
+
 }

@@ -2,14 +2,24 @@
 
 {% block body %}
 
-<div class="homecontainer" style="background-image:linear-gradient(rgba(0, 98, 176, 0.35), rgba(0, 98, 176, 0.15)), url({{ asset('build/images/cinema.6391c85b.jpg') }}); background-size: contain; background-repeat: no-repeat; background-position: center;">
-    <div class="home-btn">
-        <a 
-        href="/movies" 
-        class="uppercase border border-gray-500 text-sm py-4 px-6 rounded transition-all bg-gray-800 text-white hover:bg-white hover:text-gray-800">
-            See some movies
-        </a>
+<div class="homecontainer" style="background-image:linear-gradient(rgba(0, 98, 176, 0.35), rgba(0, 98, 176, 0.15)), url({{ asset('build/images/cinema_long.47eced8f.jpg') }}); background-size: cover; background-repeat: no-repeat; background-position: center;">
+    <div id ="animation" class="clip">
+        <img src="{{ asset('build/images/chaplin.35a96a72.jpg') }}" alt="Chaplin">   
     </div>
+    <div id ="animation2" class="clip">
+        <img src="{{ asset('build/images/marilyn.ae526439.jpg') }}" alt="Marilyn">   
+    </div>
+    <div id ="animation3" class="clip">
+        <img src="{{ asset('build/images/psycho.2160c7c0.jpg') }}" alt="Psycho">  
+    </div>
+    <div id ="animation4" class="clip">
+        <img src="{{ asset('build/images/bella.7d0ed984.jpg') }}" alt="Vita é Bella">  
+    </div>
+    <button id="move" class="home-btn uppercase border border-gray-500 sm:text-m md:text-sm py-4 px-6 rounded transition-all bg-gray-800 text-white hover:bg-white hover:text-gray-800">
+
+            See some movies
+    </button>
+
    <p class="photo-credit">
         Photo by <a href="https://unsplash.com/@jeremyyappy?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jeremy Yap</a> on <a href="https://unsplash.com/photos/turned-on-projector-J39X2xX_8CQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
     </p>
